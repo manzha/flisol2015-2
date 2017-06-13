@@ -1,0 +1,292 @@
+<!--<?php
+//require_once '../connect/dbconfig.php';
+//require_once 'dbconfig.php';
+//$query = sprintf("SELECT count(*) FROM flisol_asistentes WHERE fecha = 2015");
+//$result = mysql_query($query);
+//$row = mysql_fetch_array($result);
+//$asistentes = $row[0];
+//mysql_close();
+//if (isset($_GET["registrado"])) {
+//    if ($_GET['registrado'] == "yes") {
+        
+//    }
+//}
+?> -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>FLISoL 2015 Ciudad Madero, Tamaulipas, México</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/main.css" rel="stylesheet">
+        <script type="text/javascript" src="js/jquery.js"></script>
+        <script type="text/javascript" src="js/bootstrap.js"></script>
+        <script type="text/javascript" src="js/bootstrap-responsive.js"></script>
+        <style type="text/css">
+            body {
+                /*                padding-top: 60px;
+                                padding-bottom: 40px;*/
+                min-width: 900px;
+            }
+            .sidebar-nav {
+                padding: 9px 0;
+            }
+            .affix{
+                position: fixed;
+                width: inherit;
+
+            }
+
+            @media (max-width: 980px) {
+                /* Enable use of floated navbar text */
+                .navbar-text.pull-right {
+                    float: none;
+                    padding-left: 5px;
+                    padding-right: 5px;
+                }
+
+            }
+            /*            #patrocinadores img:hover {
+                            -webkit-filter: grayscale(0%);
+                            -webkit-transition: all 1s ease;
+                            -moz-transition: all 1s ease;
+                            -o-transition: all 1s ease;
+                            -ms-transition: all 1s ease;
+                            transition: all 1s ease;
+                        }
+            
+                        #patrocinadores img {
+                            -webkit-filter: grayscale(50%);
+                        }*/
+        </style>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="assets/js/html5shiv.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <header class="hero-unit header container-fluid">
+            <div class="row-fluid">
+                <div class="span7">
+                    <h1><a href="index.php">FLISoL 2015, Ciudad Madero.</a></h1>
+                    <p>El ITCM celebrará por 6ta ocasión el Festival Lationamericano de Instalación de Software Libre el dia 24 de abril del 2015</p>
+                    <h2><small>Ya hay</small> <?php echo $asistentes; ?> <small>asistentes registrados</small></h2>
+                </div>
+                <div class="span5">
+                    <img src="img/logo_flisol.png"/>
+                </div>
+            </div>
+        </header>
+        <div class="container-fluid full-width">
+            <div class="row-fluid">
+
+                <div class="span3">
+                    <ul class="nav nav-tabs nav-stacked" data-spy="affix" data-offset-top="500">
+                        <li><a href="#registro"><i class="icon-chevron-right"></i>Registro</a></li>
+                        <li><a href="#quees"><i class="icon-chevron-right"></i>¿Qué es?</a></li>
+                        <li><a href="#lugar"><i class="icon-chevron-right"></i>¿Donde es?</a></li>
+                        <li><a href="#agenda"><i class="icon-chevron-right"></i>Horario</a></li>
+                        <li><a href="#talleres"><i class="icon-chevron-right"></i>Talleres</a></li>
+                        <li><a href="#installfest"><i class="icon-chevron-right"></i>Festival de instalación</a></li>
+                        <li><a href="#conferencias"><i class="icon-chevron-right"></i>Conferencistas</a></li>
+                        <li><a href="#organizadores"><i class="icon-chevron-right"></i>Organizadores</a></li>
+                        <li><a href="#patrocinadores"><i class="icon-chevron-right"></i>Patrocinadores</a></li>
+                        <!--<li><a href="#estadisticas"><i class="icon-chevron-right"></i>Eventos pasados</a></li>-->
+<!--                        <li><a href="#promociones"><i class="icon-chevron-right"></i>Promociones</a></li>
+                        <li><a href="#certificacion"><i class="icon-chevron-right"></i>Certificaciones LINUX</a></li>-->
+                    </ul>
+                </div>
+
+                <!--                <div class="span12">
+                                    <ul class="nav nav-pills" data-spy="affix" data-offset-top="500">
+                                        <li><a href="#quees"><i class="icon-chevron-right"></i>¿Qué es?</a></li>
+                                        <li><a href="#lugar"><i class="icon-chevron-right"></i>¿Donde es?</a></li>
+                                        <li><a href="#agenda"><i class="icon-chevron-right"></i>Horario</a></li>
+                                        <li><a href="#installfest"><i class="icon-chevron-right"></i>Festival de instalación</a></li>
+                                        <li><a href="#conferencias"><i class="icon-chevron-right"></i>Conferencias</a></li>
+                                        <li><a href="#talleres"><i class="icon-chevron-right"></i>Talleres</a></li>
+                                        <li><a href="#organizadores"><i class="icon-chevron-right"></i>Organizadores</a></li>
+                                        <li><a href="#patrocinadores"><i class="icon-chevron-right"></i>Patrocinadores</a></li>
+                                    </ul>
+                                </div>-->
+                <div class="span9">
+                    <section id="registro">
+                        <div class="page-header">
+                            <h1>Registro</h1>
+                        </div>
+                        <p>
+                            <!--Solicitamos a todos los asistentes que por favor se registren. Al finalizar el registro se les enviará un <b>número(ID), el cual se les sugiere conserven</b> pues se les solicitará en la entrada del evento. Además con ese número podrán participar en varias sorpresas que habrá durante el evento.-->
+                            <!-- El registro se encuentra cerrado. Al llegar al evento se le verificará se hayan inscrito, y si no, aun tendrán oportunidad de hacerlo desde una computadora ahí mismo con alguien del staff. Recuerden esto les da derecho a participar en rifas. -->
+                            <p>El registro ya esta <b>abierto</b>. <a href='registro.php'>¡Puedes registrarte aquí!</a>, este año te damos la opción de solicitar un diploma impreso, aunque recuerda que este tendrá un costo de $10.00</p>
+                            <p>Al registrarte en el evento nos ayudas a llevar una estadistica de la asistencia al evento, así como derecho a diferentes sorpresas que suele haber durante el evento.</p>
+                        </p>
+                        <!--<p class="lead"><a href="registro.php">Registrarse</a></p>-->
+<!--                        <p class="lead">El registro actualmente se encuentra fuera de servicio y será habilitado el día 17 de Abril.</p>-->
+                    </section>
+                    <section id="quees">
+                        <div class="page-header">
+                            <h1>¿Qué es el FLISoL?</h1>
+                        </div>
+                        <p>El Festival Latinoamericano de Instalación de Software Libre (FLISoL), es el mayor evento de difusión del Software Libre que se realiza desde el año 2005 en diferentes países de toda latinoamerica de manera simultánea. En el año 2012 participaron más de 290 ciudades en 20 países de Latinoamérica.</p>
+                        <p>Es una oportunidad para todas aquellas personas interesadas en conocer más acerca del software libre. Participando es posible entrar en contacto con el mundo de la tecnología, la cultura del Software Libre, conocer a otros usuarios, resolver dudas e interrogantes, intercambiar opiniones y experiencias; asistir a charlas y otras actividades programadas.</p>
+                    </section>
+
+                    <section id="lugar">
+                        <div class="page-header">
+                            <h1>¿Dónde es? <small>¿y cómo llego ahí?</small></h1>
+                        </div>
+                        <p>El evento se realizará en el Instituto Tecnológico de Ciudad Madero.</p>
+                        <p>La dirección es:
+                            <b>Av. 1o. de Mayo esq. Sor Juana Inés de la Cruz s/n Col. Los Mangos C.P.89440 Cd. Madero Tamaulipas, México</b>
+                            <br>
+                            Si no sabes como llegar, enfrente de la escuela pasan los autobuses y automóviles de ruta Aguila Madero, Madero Blanco Palmas y Madero Echeverría.
+                        </p>
+                        <p>Conmutador: 01 (833) 357-48-20 </p>
+
+                        <p class="lead">El evento se realizará en el Gran Salón T2.</p>                        
+                    </section>
+
+                    <section id="agenda">
+                        <div class="page-header">
+                            <h1>Horario. <small>24 de Abril del 2015.</small></h1>
+                        </div>
+                        <p>INFORMACIÓN PRÓXIMAMENTE.</p>
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                        
+                        <!--<p><img width="700px" src="img/horario.jpg" alt="Agenda de conferencias FLISOL Madero 2015"/></p>  -->
+                        <!--<p><img src="img/agenda2.png" alt="Agenda FLISOL Madero 2013"/></p>-->  
+                    </section>
+                    <section id="talleres">
+                        <div class="page-header">
+                            <h1>Talleres. <small>24 de Abril del 2015.</small></h1>
+                        </div>
+                       <!-- <p>Los laboratorios LTR, LCG, LSI y LP se encuentran ubicados en el Laboratorio de Computo en el Campus II del Tecnológico frente al Centro de Información (Biblioteca).</p> -->
+                       <!-- <p><img width="700px" src="img/talleres.jpg" alt="Agenda de talleres LISOL Madero 2014"/></p>  -->
+                        <!--<p><img src="img/agenda2.png" alt="Agenda FLISOL Madero 2013"/></p>-->  
+                        <p>INFORMACIÓN PRÓXIMAMENTE.</p>
+                        <br /><br /><br /><br /><br /><br /><br /><br />
+                    </section>
+
+                    <section id="installfest">
+                        <div class="page-header">
+                            <h1>Festival de instalación. <small>¿Qué es y que debo llevar?</small></h1>
+                        </div>
+                        <p>Si deseas instalar un sistema operativo libre, puedes llevar tu computadora y/ó portatil, ¡nosotros te ayudamos a realizar la instalación! <b>El fin de semana estaremos publicando la información necesaria para poder participar en esta actividad</b></p>
+                        <p>Los principales requisitos: </p>
+                        <ul>
+                            <li>Tener espacio libre en disco duro</li>
+                            <li>Tener un respaldo de la información</li>
+                            <li>Tener desfragmentado el disco</li>
+                            <li>Desear conocer e instalar una distribución libre</li>
+                        </ul>
+
+                        <p>Como comentarios: </p>
+                        <p>
+                        <blockquote>
+                            Hay varias cosas que se deben tener en cuenta. Las recomendaciones más habituales son tenerla desfragmentada y tener un respaldo de información. Pero hay cosas que aun no dicen. Para los que no están muy familiarizados con el funcionamiento interno de su computadora, deben saber que un disco duro no puede tener más de 4 particiones primarias. Por lo general los discos duros de una computadora de escritorio solo tienen 1 o 2 (Disco C y D comúnmente). Las laptop son las que representan una "dificultad". Muchas veces las laptops tienen más de 2 particiones primarias (las HP tienen las cuatro, una llamada HPTools, uno de recuperación, otro del SO y la última no recuerdo). ¿Por qué menciono esto? Si su computadora ya tiene las 4 particiones lógicas ocupadas, no será posible instalar un SO libre el día del festival, una partición necesita ser borrada, y esto lleva a perder la información que esta contenga. 
+                            ¿Cómo saber cuántas particiones tienen mis discos duros?
+                            En W7 pueden darle clic a Inicio > Clic derecho en Equipo > Administrar. Ahí seleccionan Administración de discos. Abajo viene Disco 0. Y se ven algunas divisiones. Cada división representa una partición. 
+                            En dado caso de que tengan más de 4, investiguen para que usan cada una. Y la que no sirva anotenla para que ustedes o algún miembro del staff la borre el día del Festival
+                        </blockquote></p>
+                    </section>
+                    <section id="conferencias">
+                        <div class="page-header">
+                            <h1>Conferencistas. <small>Conoce a nuestros conferencistas</small></h1>
+                        </div>
+                        <div class="conferencista row-fluid">
+                            <!--<div class="foto span3"><img src="img/aaronluna.png" /></div>
+                            <div class="info-conferencista span9">
+                                <h2>Aarón Luna</h2>
+                                <p>Ingeniero en TI  y amante del software libre, en especial del sistema operativo Linux. Embajador oficial de openSUSE en México. Catedrático de TI por vocación del Subsistema de Universidades Tecnológicas y Universidades Politécnicas de la Secretaría de Educación Pública. Coordinador General del proyecto openSUSE México, un portal que se dedica al apoyo del uso de las Tecnologías de Información a través de noticias, cursos y diplomados utilizando el Sistema Operativo Linux. Fundador y Coordinador de openSUSE Academy, proyecto piloto de openSUSE que está enfocado a la preparación de la Certificación de SUSE. Colaborador de la Revista SG Software Guru.</p> -->
+                                <!--<p>Conferencista y tallerista en eventos de Sofware Libre: FLISOL (Festival Latinoamericano de Instalación de Software Libre), SFD (Software Freedom Day), DFD (Document Freedom Day), HFD (Hardware Freedom Day), Chamilo LatinAmerica 2013, de igual forma en Congresos Y Foros de Talla Nacional: Congreso de Seguridad “Free Security 2013” - Tecnológico de Tuxtepex, Oaxaca; Congreso SAIC – UNAM 2013, Ciudad Universitaria, México D.F.; Congreso Punto y Coma 2013 - Tec de Monterrey, Campus Cuernavaca, Morelos; Foro Nacional de Software Libre Zacatecas 2013, Zacatecas; Campus Party México 2013, México D.F.</p>-->
+                            </div>
+                        </div>
+                        <div class="conferencista row-fluid">
+                            <!--<div class="foto span3"><img src="img/manuelharo.png" /></div>
+                            <div class="info-conferencista span9">
+                                <h2>Manuel Haro Márquez</h2>
+                                <p>Actualmente Responsable del Proyecto de Software Libre del Gobierno del Estado de Zacatecas creando las estrategias de fomento, difusión, aprovechamiento e implantación de Software Libre integrando a sectores como la industria, la sociedad civil, la educación y el sector Gobierno en sus tres niveles; Coordinador General del Congreso Internacional de Software Libre y recientemente Director del Laboratorio Nacional para el Desarrollo de Software Libre.</p> -->
+                            </div>
+                        </div>
+                        <div class="conferencista row-fluid">
+                            <!--<div class="foto span3"><img src="img/federicomena.png" /></div>
+                            <div class="info-conferencista span9">
+                                <h2>Federico Mena Quintero</h2>
+                                <p>Programador de software libre nacido en México. Entre sus principales aportes destaca la fundación del proyecto GNOME junto a Miguel de Icaza en el año de 1997.</p> -->
+                            </div>
+                        </div>  
+                        <div class="conferencista row-fluid">
+                           <!-- <div class="foto span3"><img src="img/odinmojica.png" /></div>
+                            <div class="info-conferencista span9">
+                                <h2>Odin Mojica</h2>
+                                <p>Representante de Mozilla México, pertenece y coordina la comunidad de Mozilla México. Cuenta con 10 años de experiencia en servidores de alta disponibilidad en GNU/Linux, BSD y Solaris. Entre su experiencia profesional destaca haber sido durante 3 años el responsable de la administración de servidores UNIX de la Secretaría de Relaciones Exteriores (SRE).</p> -->
+                            </div>
+                        </div>
+                        <div class="conferencista row-fluid">
+                          <!--  <div class="foto span3"><img src="img/omarsansi.png" /></div>
+                            <div class="info-conferencista span9">
+                                <h2>Omar Sandoval</h2>
+                                <p>Este usuario se involucra en proyectos y comunidades digitales que impulsan el conocimiento y cultura libre.</p>
+                                <p>Apoyo el movimiento del Software Libre y la Cultura Libre para una nueva interacción humano-datos.</p> -->
+                            </div>
+                        </div>
+                        <div class="conferencista row-fluid">
+                         <!--   <div class="foto span3"><img src="img/victorsosa.png" /></div>
+                            <div class="info-conferencista span9">
+                                <h2>Dr. Víctor Jesús Sosa Sosa</h2>
+                                <p>Profesor-investigador titular  del Laboratorio de Tecnologías de la Información (Campus Tamaulipas) del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional (CINVESTAV) en México. </p>
+                                <p>Áreas de interés se encuentran relacionadas con: Sistemas de Información Distribuidos, Gestión de Datos en la Web  (búsqueda, extracción e integración de información), 
+                                    Bases de Datos, Cómputo y Almacenamiento en la Nube.</p> -->
+                            </div>
+                        </div>
+                    </section>
+                    <section id="organizadores">
+                    	<center>
+                        <div class="page-header">
+                            <h1>Organizadores. <small>Conoce a los organizadores</small></h1>
+                        </div>
+                        <center>
+                            <p>
+                                <img src="img/acmitcmlogo.png" alt="Capitulo estudiantil ACM ITCM" width="200px"/> 
+                                <img src="img/logoisc.png" alt="Departamento de Sistemas" width="200px"/>
+                            </p>
+                        </center>
+                        <p>Si deseas contactar a los organizadores puedes hacerlo al siguiente correo:</p>
+                        <ul>
+                            <li><a href="mailto:chapter@itcm.acm.org">Capítulo estudiantil ACM ITCM</a> < chapter@itcm.acm.org ></li>
+                        </ul>
+                        </center>
+                    </section>
+                    <section id="patrocinadores">
+                    	<center>
+                        <div class="page-header">
+                            <h1>Patrocinadores. <small>Conoce a los patrocinadores</small></h1>
+                        </div>
+                        <center>
+                            <p>
+                               <!-- <a href="https://www.facebook.com/CupcakeFactoryTampico?fref=ts"><img src="img/cupcake.jpg" alt="Cupcake Factory" width="200px" /></a>
+                                <a href="http://ciudadmadero.mx/"><img src="img/madero.jpg" alt="Gobierno Municipal de Madero" width="200px" /></a> -->
+                                <a href="https://www.facebook.com/ItalianCoffeeUniversidad"><img src="img/italiancoffe.jpg" alt="The Italian Coffe Company" width="200px" /></a>
+                                <!-- <a href="http://www.congresotamaulipas.gob.mx/"><img src="img/cet.jpg" alt="Congreso del Estado de Tamaulipas" width="200px" /></a> -->
+                                <a href="https://www.fsf.org"><img src="img/fsf.jpg" alt="Free Software Foundation" width="200px" /></a>
+                               <!-- <a href="https://www.facebook.com/linkyshoptam?fref=ts"><img src="img/linkyshop.jpg" alt="Linky Shop" width="200px" /></a>
+                                <a href="https://es.opensuse.org/‎"><img src="img/opensuse.jpg" alt="openSuSe" width="200px" /></a>
+                                <a href="http://www.usbstore.com.mx"><img src="img/usbstore.png" alt="USB Store" width="200px" /></a>
+                                <a href="http://www.mozilla-mexico.org/"><img src="img/logo-mozilla-MX.png" alt="FireFox" width="200px" /></a>
+                                <a href="#"><img src="img/labsol.jpg" alt="Labsol" width="200px" /></a>
+                                <a href="http://www.sistemasplatino.com/"><img src="img/sistemasplatino.jpg" alt="Sistemas Platino" width="200px" /></a> -->
+                            </p>
+                        </center>
+                        </center>
+                    </section>
+<!--                    <section id="estadisticas">
+                        <div class="page-header">
+                            <h1>Eventos pasados. <small>Conoce las estadisticas de los festivales anteriores.</small></h1>
+                        </div>
+                    </section>-->
+                </div>
+            </div> 
+        </div>
+    </body>
+</html>

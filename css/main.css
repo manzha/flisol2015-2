@@ -1,0 +1,46 @@
+.header{
+    background: #ffcc33;
+    background-image: url("../img/patron.jpg");
+    
+    color:white;
+/*    background-repeat: no-repeat;
+    background-position: 85%;
+    background-size: 35%;
+    padding:7%;*/
+    /*z-index: 3;*/
+}
+.header h1 {
+    text-shadow: 4px 4px #444444;
+}
+.header small{
+    color:white;
+}
+/*.header2{
+    background-image: url("../img/logo_flisol.png"); 
+    background-repeat: no-repeat;
+    background-position: 85%;
+    background-size: 40%;
+}*/
+/*.subnav-fixed {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    right: 0;
+    z-index: 1020;
+  }*/
+.affix{
+    position:fixed;
+    width: 100%;
+    top: 20px;
+}
+
+header a{
+    color:white;
+}
+header a:hover{
+    color:white;
+    text-decoration: none;
+}
+header a:visited{
+    color:white;
+}
